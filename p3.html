@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<title>บทเรียน เรื่อง คอมพิวเตอร์เบื้องต้น</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+<style type="text/css">
+body,td,th {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: 'Mitr', sans-serif;
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+	
+<body bgcolor="#000000" onLoad="MM_preloadImages('images/m3s.png','images/m4s.png','images/m1s.png','images/m2s.png')">
+<table width="503" height="795" border="0" align="center">
+  <tr>
+    <td height="250" colspan="3"><img src="images/banner.png" width="1600" height="250" alt=""/></td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="#333333"><marquee loop="true" onmouseover="this.stop();" onmouseout="this.start();">ยินดีต้อนรับเข้าสู่บทเรียนเครือข่าย เรื่อง คอมพิวเตอร์เบื้องต้น</marquee>
+	</td>
+  </tr>
+  <tr>
+    <td width="255" height="55"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/m1s.png',1)"><img src="images/m1.png" alt="" width="255" height="55" id="Image3"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/m1s.png',0)"></a></td>
+    <td rowspan="5" style="text-align: justify; font-size: x-large; font-family: Mitr, sans-serif; font-style: normal;">
+		<br>
+		  <center><h3><stong>การประกอบเครื่องคอมพิวเตอร์</stong></h3></center> 
+		<center>
+		  <img src="images/computer-assembly-set-3.jpg" width="847" height="442" alt=""/></center>		
+	  <center>
+		  <p style="font-size: medium; text-align: center;">ก่อนอื่นต้องขอขอบคุณข้อมูลดีๆและรูปภาพสวยๆทั้งหมดจาก <a href="https://bestreview.asia/how-to/computer-assembly/">bestreview.asia</a></p></center>
+		<p style="text-indent: 2.5em; font-size: medium; text-align: justify;">เมื่อเราพูดถึง การประกอบคอมพิวเตอร์ คนส่วนใหญ่มักจะคิดว่า นี่เป็นงานที่จะต้องใช้ช่างที่มีความรู้ในด้านนี้เท่านั้น เพราะในเคสคอม ฯ หนึ่งเครื่อง มีฮาร์ดแวร์ และอุปกรณ์ต่าง ๆ เยอะแยะมากมายครับ ทั้ง CPU, GPU, RAM, SSD, HDD, PSU และอีกมากมาย แตกต่างกันไปในแต่ละเครื่อง แถมอุปกรณ์แต่ละชิ้นก็มีหน้าตาและพอร์ตเชื่อมต่อที่ไม่เหมือนกันเลย บางชิ้นก็มีสายไฟเยอะแยะเต็มไปหมด แต่บางชิ้นก็ไม่มีพอร์ตและสายใด ๆ เลย ทำให้หลาย ๆ คนมองว่าเป็นงานที่ยุ่งยาก และมีความซับซ้อน แต่เอาเข้าจริง ๆ การประกอบคอมพิวเตอร์ตั้งโต๊ะ (Desktop PC) สักเครื่อง ไม่ได้ยากอย่างที่คิดครับ เพราะอุปกรณ์ทุกชิ้นมีการเขียนกำกับเอาไว้หมด ฉะนั้นหากคุณรู้ความหมาย คุณก็สามารถทำตามคูมือได้ไม่ยากครับ โดยในการประกอบคอมฯ ใช้เอง มีข้อดีหลายอย่างครับ แน่นอนอันดับแรก ก็คือ คุณจะได้สเปกที่ตรงกับความต้องของคุณที่สุด ไม่มีคำว่า “ได้อย่าง เสียอย่าง” เหมือนกับ All in One PC หรือ PC สำเร็จรูปทั่ว ๆ ไป นอกจากนี้คุณยังสามารถรื้อคอมฯ มาปัดฝุ่น ทำความสะอาด หรือทำการอัพเกรดสเปกได้ง่าย ๆ ด้วยตัวเอง โดยไม่จำเป็นต้องเสียทั้ง เงิน และเวลาอีกต่อไป ดังนั้นถ้าหากคุณมีงบประมาณที่จำกัด แต่ต้องการซื้อคอมฯ ใหม่ที่มีสเปกที่คุ้มค่าและตรงกับการใช้งานของคุณ ทางที่ดีที่สุดคือ คุณต้องทำการเลือกฮาร์ดแวร์แต่ละชิ้นด้วยตัวเองและประกอบมันขึ้นมาเองกับมือครับ ซึ่งจะช่วยให้คุณสามารถเลือกได้ หากอันไหนเกินงบฯ คุณก็เอาไว้อัพเกรดทีหลังได้ รวมไปถึงเวลามีปัญหา หรือเมื่อคอมฯ คุณสกปรก คุณจะสามารถรื้อออกมาดูได้ทันที ซึ่งการประกอบคอมพิวเตอร์ มีขั้นตอนดังต่อไปนี้</p>
+		<hr>		
+	  <p style="text-indent: 2.5em; font-size: x-large; text-align: justify;">ขั้นเตรียมการ</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">เตรียมฮาร์ดแวร์ หรือส่วนประกอบต่าง ๆ ของคอมพิวเตอร์ ส่วนประกอบต่าง ๆ ของคอมพิวเตอร์ สำหรับคอมพิวเตอร์ที่เรานำมาเป็นตัวอย่างในวันนี้ เป็นสเปกระดับกลาง ๆ ครับ ซึ่งสามารถตอบโจทย์ได้ทั้ง การทำงาน และการเล่นเกม โดยเน้นราคาที่คุ้มค่า แต่มีความเร็วและความแรงระดับนึง สามารถใช้งานได้อีกหลายปี และในอนาคตคุณยังจะสามารถอัพเกรดสเปกได้ด้วย เพื่อทำให้เครื่องแรงขึ้น </p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;"> อุปกรณ์ที่ต้องเตรียม ก่อนเริ่มประกอบคอมพิวเตอร์ </p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. ไขควงขนาดเล็ก (ถ้าเป็นไขควงแม่เหล็ก ชีวิตจะง่ายขึ้นมากครับ) </p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. สายรัดเคเบิ้ลไทร์ </p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. กรรไกร หรือคีมขนาดเล็ก </p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">4. วัสดุที่มีพื้นผิวที่เรียบ และจะต้องไม่นำไฟฟ้า เพื่อใช้วางชิ้นส่วนฮาร์ดแวร์ต่าง ๆ </p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">5. ศึกษาคู่มือ</p>
+      <hr>
+      <p style="text-indent: 2.5em; font-size: x-large; text-align: justify; font-family: Mitr, sans-serif;">ขั้นการประกอบ</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">ประกอบคอมพิวเตอร์ ได้ง่าย ๆ ใน 10 ขั้นตอน </p>
+      <h3><strong>ขั้นตอนที่ 1 : การติดตั้ง CPU</strong></h3>    
+      <center><img src="images/computer-assembly-step-1.jpg" width="847" height="442" alt=""/></center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">ในการประกอบคอมพิวเตอร์ ในขั้นตอนแรกจะเป็นการจัดเตรียมเมนบอร์ดให้พร้อมสำหรับติดตั้ง CPU ซึ่งไม่ว่าจะเป็น Intel หรือ AMD การติดตั้งจะใกล้เคียงกันครับ โดยมีขั้นตอนดังต่อไปนี้</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. นำเมนบอร์ดออกมาวางบนวัสดุที่ไม่นำไฟฟ้า (ซึ่งในที่นี้ เราจะใช้วัสดุที่ห่อมาในกล่องของเมนบอร์ดนั่นแหละครับ)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. ทำการปลดล็อคซ็อกเก็ตซีพียู โดยการกดตัวล็อคที่ด้านข้างเบา จากนั้นกางออกให้สุด เพื่อเตรียมนำ CPU มาวาง</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. นำ CPU มาวางลงบนซ็อคเก็ต ที่เราปลดล็อคไว้ โดยให้รอยมาร์ค บน CPU ตรงกับรอยมาร์คบนซ็อกเก็ตเมนบอร์ด</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">4. จากนั้นค่อย ๆ ขยับ CPU ให้เข้าที่เข้าทาง ตรงกับซ็อคเก็ตของเมนบอร์ด และตรวจสอบการวาง CPU ถ้าตรงตำแหน่งแล้ว คุณก็ทำการปิดตัวล็อค CPU กลับคืนได้เลย เพื่อล็อค CPU ติดกับซ็อคเก็ตครับ</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;"><strong>ข้อควรระวัง :</strong> บนซ็อคเก็ต CPU ของเมนบอร์ด และที่ด้านหลัง CPU จะมีขาทองแดงเล็ก ๆ เรียกว่า <strong>&ldquo;พิน&rdquo;</strong> เรียงรายอยู่เต็มไปหมดครับ ซึ่งคุณต้องระมัดระวังในส่วนนี้ให้มาก ๆ เพราะพินมีความบอบบางเป็นอย่างมากครับ แค่โดนสะกิดนิดหน่อยมันก็พร้อมที่จะงอแล้ว ซึ่งอาจส่งผลให้ CPU ไม่สามารถทำงานได้</p>
+      <hr>
+      <h3><strong>ขั้นตอนที่ 2 : การติดตั้ง RAM</strong></h3>
+      <center><p><img src="images/computer-assembly-step-2.jpg" width="847" height="442" alt=""/></p></center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">ซึ่งในขั้นตอนนี้ถือเป็นขั้นตอนที่ง่ายมาก ๆ ครับ เพราะมันตายตัว มีสล็อตเฉพาะของมันเอง และยังมีเขี้ยวที่ทำให้คุณใส่ได้อย่างถูกต้องแน่นอนครับ โดยจะมีขั้นตอนง่าย ๆ ดังนี้</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">1. ขั้นแรกให้คุณทำการปลดล็อค สล็อต RAM ก่อนโดยการกดตัวล็อคสล็อต RAM ที่บริเวณปลายสุดของสล็อตใส่ RAM (ซึ่งเมนบอร์ดบางรุ่นอาจเป็นล็อคด้านเดียว หรือบางรุ่นอาจใช้ล็อคสองด้านเลย)</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">2. หากคุณใช้ RAM เพียง 1-2 สล็อต เราขอแนะนำให้เปิดคู่มือของเมนบอร์ดครับ เพื่อตรวจสอบลำดับในการติดตั้ง RAM ว่าควรติดตั้ง RAM ในสล็อตไหนก่อน-หลัง (แต่ถ้าคุณใส่เต็มพิกัด ทุกสล็อต คุณก็ใส่ไปได้เลยครับ)</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">3. ที่สล็อต RAM บนเมนบอร์ด และบนตัว RAM ที่บริเวณทองแดงจะมีการทำร่องเล็ก ๆ เอาไว้อยู่ครับ ให้คุณติดตั้ง RAM โดยเล็งให้ร่องนั้นตรงกัน</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">4. จากนั้นค่อย ๆ กด RAM ลงไปในสล็อต ซึ่งมันจะไปดันขาล็อคแรมให้กลับมาอยู่ในตำแหน่งล็อคเช่นเดิม (หากเข้าล็อคมันจะมีเสียงดัง &ldquo;คลิก&rdquo; ครับ)</p>
+      <hr>
+      <h3><strong>ขั้นตอนที่ 3 : การติดตั้งไดรฟ์ SSD M.2</strong></h3>
+      <center>
+        <img src="images/computer-assembly-step-3.jpg" width="847" height="442" alt=""/>
+      </center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">สำหรับไดรฟ์ SSD M.2 เป็นหน่วยความจำข้อมูลแบบใหม่ ซึ่งมีความเร็วในการถ่ายโอนข้อมูลที่สูงมาก ๆ ในปัจจุบันครับ โดยในการติดตั้งไม่ได้ยากเลยครับ ง่ายกว่าการติดตั้ง SSD หรือ HDD แบบเดิมเสียอีกเพราะไม่ต้องใช้สายใด ๆ เลย หากในสเปกของคุณเลือกใช้ SSD M.2 คุณก็สามารถทำตามง่าย ๆ ดังนี้</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. บนเมนบอร์ดจะมีจุดที่เขียนว่า M.2 PCI-e อยู่ ให้คุณใช้ไขควงไขน็อตที่ยึดช่อง M.2 บนเมนบอร์ดออกก่อน</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. เมื่อไขออกแล้ว ให้คุณนำไดรฟ์ M.2 ค่อย ๆ เสียบเข้าไปในช่อง M.2 บนเมนบอร์ด ด้วยมุมประมาน 45 องศา</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. จากนั้นทำการกดตัวไดร์ฟ M.2 ลงมา โดยให้ขนาดไปกับเมนบอร์ด แล้วค่อยไขน็อตยึดช่อง M.2 กลับไปที่เดิม เพื่อยึดไดร์ฟ M.2 เอาไว้</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;"><strong>ข้อควรระวัง :</strong> ก่อนที่คุณจะทำการกดไดรฟ์ M.2 ลงไป (ในข้อ 3) คุณควรตรวจเช็คให้มั่นใจก่อนว่าไดรฟ์ M.2 ของคุณเข้าล็อคแล้วหรือยัง ? เพื่อป้องกันความเสียหายทั้ง ไดรฟ์ M.2 และเมนบอร์ด ครับ</p>
+      <hr>
+      <h3><strong>ขั้นตอนที่ 4 : ติดตั้งพัดลมระบายความร้อน CPU (CPU Cooler)</strong></h3>
+      <center>
+        <img src="images/computer-assembly-step-4.jpg" width="847" height="442" alt=""/>
+      </center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">สำหรับซีพียู Intel Core i5-12600K ที่เราเลือกใช้ในวันนี้ จะไม่มี CPU Cooler มาให้ครับ แถมยังมีการเปลี่ยน Socket ใหม่ ในรอบสิบปี เป็น LGA1700 ทำให้ไม่สามารถใช้ของเก่าที่มีอยู่ได้ครับ เพราะฉะนั้นคุณจำเป็นต้อง ซื้อ CPU Cooler ใหม่ หรือไม่ก็ต้องหาซื้อ ขาแปลง (Mounting) มาใช้งานแทนครับ ซึ่งในวันนี้เราใช้ CPU Cooler ราคาประหยัด จาก ID Cooling Se-214-xt ครับ โดยมีขั้นตอนการติดตั้งดังต่อไปนี้</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">1. เริ่มต้นด้วยการใส่แผ่น Backplate ที่ด้านหลัง ของเมนบอร์ด จากนั้นมายึดแผ่น Backplate อีกหนึ่งชิ้นที่ด้านหน้า เพื่อเป็นฐาน สำหรับรองรับ CPU Cooler</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">2. ต่อมาให้ทาซิลิโคนลงบนกระดอง CPU (ควรทาในปริมาณที่พอดี ไม่มากหรือน้อยจนเกินไปครับ)</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">3. จากนั้นนำฮีทซิงค์มาวางทับลงบนกระดอง CPU ตรง ๆ เลย โดยที่แผ่น Backplate จะมีน็อตโผล่ขึ้นมาเล็กน้อย ให้คุณขันน็อตตัวแรกแบบหลวม ๆ ก่อน แล้วสลับไปขันน็อตอีกตัวหนึ่ง (สลับขันไปมาเรื่อย ๆ) จนแน่น (พอตึงมือ)</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">4. เมื่อติดตั้งฮีทซิงค์เสร็จแล้ว ต่อมาก็ให้ติดตั้งพัดลมเข้ากับฮีทซิงค์ โดยคุณจะต้องเล็งทิศทางให้เรียบร้อยว่า คุณจะเก็บซ่อนสายอย่างไร ? เมื่อได้ทิศทางแล้ว ให้คุณเชื่อมต่อสายพัดลมเข้ากับขั้ว CPU Fan บนเมนบอร์ดเป็นอันเสร็จเรียบร้อย</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;"><strong>ข้อควรระวัง : </strong>การใส่ซิลิโคน ควรใส่ในปริมาณที่พอเหมาะพอดีครับ เพราะหากคุณใส่น้อยเกินไปก็จะทำให้ผิวหน้ามีสัมผัสไม่ดี แต่ถ้าหากใส่มากเกินไปก็จะทำให้ซิลิโคนเยิ้มลงไปในซ็อกเก็ตได้</p>
+		<hr>
+      <h3><strong>ขั้นตอนที่ 5 : การติดตั้งเมนบอร์ดเข้ากับเคสคอมพิวเตอร์</strong></h3>
+      <center>
+        <img src="images/computer-assembly-step-5.jpg" width="847" height="442" alt=""/>
+      </center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">เมื่อทำการประกอบอุปกรณ์บางส่วนเข้ากับเมนบอร์ดเสร็จเรียบร้อยแล้ว ก็มาถึงขั้นตอน การนำเมนบอร์ดเข้าไปติดตั้งภายในเคสคอมพิวเตอร์กันครับ ซึ่งคุณจะต้องเตรียมน็อต (ที่มากับเคส) และไขควง เอาไว้ให้พร้อมครับ</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. อันดับแรกให้คุณนำแผ่น I/O Shield (แผ่นปิดพอร์ตต่างๆ ที่มากับเมนบอร์ด) ติดตั้งบริเวณด้านหลังเคสฯ โดยกดลงไปตรง ๆ ให้เข้าล็อคของมัน หลังจากนั้นให้จับเคสคอมพิวเตอร์ นอนลง ครับ</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. หันเมนบอร์ดด้านที่มีพอร์ตต่าง ๆ ให้ตรงกับแผ่น I/O Shield โดยการเอียงเมนบอร์ด 45 องศา เมื่อตรงกันแล้วก็ค่อย ๆ วางเมนบอร์ดลงไปได้เลย</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. เมื่อวางลงไปแล้วให้คุณขยับเมนบอร์ดเล็กน้อย เพื่อให้รูน็อตบนเมนบอร์ดตรงกับรูน็อตของเคส จากนั้นก็ไล่ขันน็อตให้แน่น (พอตึงมือ) เพื่อยึดเมนบอร์ดเข้ากับเคส (ส่วนจำนวนน็อตทั้งหมด จะต่างกันไปครับ ขึ้นอยู่กับขนาดของเมนบอร์ด)</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;"><strong>ข้อควรระวัง : </strong>การขันน็อตเพื่อยึดเมนบอร์ดเข้ากับเคส ข้อควรระวังที่สุดคือ คุณไม่ควรขันแน่นจนเกินไปครับ เพราะรูน็อตอยู่บนเมนบอร์ดโดยตรง ฉะนั้นหากคุณขันน็อตแน่นจนเกินไป มันอาจจะทำให้วงจรบนเมนบอร์ด ได้รับความเสียหายได้ แต่ถ้าหากคุณต้องการการติดตั้งที่แน่นหนา เพื่อรองรับอุปกรณ์ขนาดใหญ่ อย่าง การ์ดจอ หรือพัดลมซีพียู เราขอแนะนำให้คุณ ยึดน็อตให้ครบทุกช่องครับ โดยขันให้แน่นพอตึงมือ</p>
+      <hr><h3><strong>ขั้นตอนที่ 6 : ติดตั้งอุปกรณ์จัดเก็บข้อมูล (</strong><strong>SSD </strong><strong>หรือ </strong><strong>HDD</strong><strong>)</strong></h3>
+      <center>
+        <img src="images/computer-assembly-step-6.jpg" width="847" height="442" alt=""/>
+      </center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">ในขั้นตอนนี้เป็นการติดตั้ง อุปกรณ์จัดเก็บข้อมูลต่าง ๆ ทั้ง SSD SATA และ HDD ครับ หากสเปกที่คุณเลือกมาใช้ตัวใด ตัวหนึ่ง หรือใช้ทั้งคู่ ไม่ว่าจะเป็น ขนาด 2.5 นิ้ว หรือ 3.5 นิ้ว คุณก็สามารถทำตามขั้นตอนต่อไปนี้ได้ครับ แต่ถ้าหากคุณใช้แค่ SSD M.2 PCIe/NVMe เพียงอย่างเดียวคุณก็สามารถข้ามขั้นตอนนี้ไปได้ครับ แต่ถ้าหากในอนาคตจะมีการอัพเกรดเพิ่มเติม คุณก็สามารถทำตามขั้นตอนได้ง่าย ๆ ดังนี้</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. นำฮาร์ดไดรฟ์ หรืออุปกรณ์จัดเก็บข้อมูล ไม่ว่าจะเป็นแบบใดก็ตาม ติดตั้งเข้ากับเคสฯ (โดยเคสส่วนใหญ่ มีช่องสำหรับติดตั้งทั้ง SSD และ HDD ให้อยู่แล้วครับ)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. จากนั้นทำการเสียบสาย SATA (สายที่มากับเมนบอร์ด) โดยด้านหนึง เสียบเข้ากับฮาร์ดไดรฟ์ และอีกด้าน ให้เสียบเข้ากับพอร์ต SATA Slots บนเมนบอร์ด</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. ส่วนขั้นตอนสุดท้ายให้คุณทำหลังจากติดตั้ง Power supply เสร็จแล้ว โดยนำสาย SATA power จาก Power supply ต่อเข้ากับฮาร์ดไดรฟ์ (ต่อให้ครบทุกไดรฟ์ทั้ง SSD และ HDD) ก็เป็นอันเรียบร้อยครับ</p>
+      <hr><h3><strong>ขั้นตอนที่ 7 : การติดตั้งกราฟฟิกการ์ด หรือการ์ดจอ (GPU)</strong></h3>
+		<center>
+		  <img src="images/computer-assembly-step-7.jpg" width="847" height="442" alt=""/>
+		</center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">มากันที่ส่วนยอดนิยม สำหรับทั้ง คนเล่นเกม และคนทำงาน ครับ สำหรับการติดตั้ง กราฟฟิกการ์ด หรือการ์ดจอ (GPU) ซึ่งวิธีการติดตั้งก็จะคล้ายคลึงกับการติดตั้ง RAM เลยครับ ต่างกันเพียงเล็กน้อยเท่านั้น ดังนี้</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. ขั้นแรกให้คุณทำการถอด แผ่นปิดสล็อต PCI-e ที่ด้านหลังเคสออกก่อน ซึ่งจะอยู่ตรงกับช่อง PCI-e x16 สำหรับติดตั้งกราฟฟิกการ์ด (ซึ่งจะใช้กี่ช่องก็อยู่ที่กราฟฟิกการ์ดของคุณ อย่างรุ่นไฮเอ็นด์ที่มีขนาดใหญ่ จะจำเป็นต้องใช้ 2 ช่อง)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. ทำการปลดล็อค ตัวล็อคสล็อต PCI-e โดยการดันตัวล็อคที่อยู่ปลายสล็อตออก (ซึ่งเมนบอร์ดบางรุ่น อาจเป็นล็อคด้านเดียว หรือบางรุ่นอาจใช้ล็อคสองด้านเลย)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. นำการ์ดจอมาใส่ โดยเล็งแผงทองแดงให้ตรงกับสล็อต PCI-e และเล็งด้านหลังการ์ดให้ตรงกับที่ปิดสล็อต PCI-e ที่ได้ถอดไว้ในข้อที่ 1 จากนั้นค่อย ๆ กดการ์ดลงไปในสล็อตจนมีเสียงดัง &ldquo;คลิก&rdquo; (ซึ่งเสียงเกิดจากขาล็อคสล็อตถูกดันกลับมาอยู่ในตำแหน่งล็อคเช่นเดิม)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">4. เมื่อติดตั้งเสร็จเรียบร้อยแล้ว ให้คุณมาขันน็อตยึดการ์ดจอที่ด้านหลังของเคสคอมพิวเตอร์ให้ครบถ้วน (โดยนำน็อตจากข้อที่ 1 มาขันกลับเข้าที่เดิมครับ)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">5. หากการ์ดจอที่คุณใช้งาน มีพอร์ต 6 Pin, 8 Pin หรือ 12 Pin นั่นหมายถึง การ์ดจอรุ่นนั้น จำเป็นต้องใช้ไฟเลี้ยงเพิ่มเติมครับ ฉะนั้นขั้นตอนสุดท้ายให้คุณทำหลังจากติดตั้ง Power supply เสร็จแล้ว โดยการนำสาย 8 Pin (6+2 Pin) หรือ PCI-E มาต่อเข้ากับการ์ดจอด้วย</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;"><strong>ข้อควรระวัง :</strong> กราฟิกการ์ดหรือการ์ดจอระดับไฮเอนด์บางรุ่น ได้รับการออกแบบโดยเน้นไปที่การระบายความร้อนที่ดีขึ้น ทำให้มีฮีทซิงค์ขนาดใหญ่ ใช้พัดลม 3 ตัว ส่งผลให้มีทั้งความยาว และน้ำหนักที่มากกว่าการ์ดจอปกติครับ ดังนั้นหากการ์ดจอของคุณจัดอยู่ในประเภทนี้ เราขอแนะนำให้คุณหาซื้อตัวค้ำการ์ดจอมาใช้ด้วย เพราะถ้าไม่มีการค้ำใด ๆ เลย เมื่อใช้งานไปนาน ๆ ด้วยน้ำหนักที่มาก อาจทำให้ตัวการ์ดงอได้ หรือเมนบอร์ดได้รับความเสียหายได้ครับ</p>
+     <hr> <h3><strong>ขั้นตอนที่ 8 : การติดตั้ง Power Supply (PSU) </strong></h3>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">มาต่อกันที่การติดตั้ง Power Supply (PSU) ครับ ซึ่งเป็นส่วนสำคัญ ที่ค่อนข้างมีความซับซ้อนเป็นอย่างมากครับ เนื่องจากมันมีสายไฟ และพอร์ตต่าง ๆ เยอะแยะเต็มไปหมด ฉะนั้นเพื่อให้เข้าใจได้ง่ายขึ้น เราขอแยกขั้นตอนออกเป็น 2 ส่วน ดังต่อไปนี้</p>
+      <h4><strong>8.1 การติดตั้ง Power Supply (PSU) เข้ากับเคสคอมพิวเตอร</strong></h4>
+      <center>
+        <img src="images/computer-assembly-step-8-1.jpg" width="847" height="442" alt=""/>
+      </center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">ในขั้นนี้เป็นการติดตั้งตัวกล่อง PSU เข้ากับเคส โดยทำได้ง่าย ๆ ดังนี้</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. ในขั้นแรก ทำการติดตั้ง PSU เข้ากับเคสคอมพิวเตอร์ โดยยึดน็อตให้ครบทั้ง 4 ตัว เพื่อความแน่นหนา</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. ร้อยสายไฟทั้งหมดไปเก็บไว้ที่ด้านข้างของเคสอีกฝั่งนึง (หลังเมนบอร์ด) เพื่อเป็นการเก็บซ่อนสายไฟที่ไม่ได้มีการใช้งาน หรือสายที่มีความยาวมากเกินไป เพื่อความสวยงามครับ</p>
+      <p><h4><strong>8.2 การเชื่อมต่อสาย Power Supply เข้ากับอุปกรณ์ต่าง ๆ บน Mainboard</strong></h4></p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">ก่อนจะลงมือทำ เรามาทำความรู้จักกับสายต่าง ๆ ของ PSU ในแต่ละเส้นกันก่อนครับ ซึ่งจะมีอยู่ทั้งหมด 6 เส้น หลัก ๆ ดังนี้</p>
+      <table border="2">
+        <tbody>
+          <tr>
+            <td width="253"><img src="images/computer-assembly-8-2-1.jpg" width="500" height="250" alt=""/></td>
+            <td width="1242"><p style="text-indent: 2.5em; font-size: medium; text-align: justify;">1. สาย 24 Pin : เป็นสายที่มี 24 Pin (20+4 Pin) ถือว่ามีขนาดใหญ่ที่สุดครับ ใช้เชื่อมต่อเข้ากับเมนบอร์ด โดยทำหน้าที่จ่ายไฟเลี้ยงให้เมนบอร์ดครับ</p></td>
+          </tr>
+          <tr>
+            <td><img src="images/computer-assembly-8-2-2.jpg" width="500" height="250" alt=""/></td>
+            <td><p style="text-indent: 2.5em; font-size: medium; text-align: justify;">2. สาย 8 Pin หรือ ATX 12V : เป็นสาย 8 Pin แยก 4+4 Pin ใช้เชื่อมต่อกับเมนบอร์ดเช่นกัน แต่มีหน้าที่จ่ายไฟเลี้ยง CPU (พอร์ตจะอยู่ด้านบน ใกล้ CPU) ส่วนที่แยกเป็น 4+4 Pin เนื่องจากมีเมนบอร์ดบางรุ่น ต้องการใช้งานเพียง 4 Pin เท่านั้น</p></td>
+          </tr>
+          <tr>
+            <td><img src="images/computer-assembly-8-2-3.jpg" width="500" height="250" alt=""/></td>
+            <td><p style="text-indent: 2.5em; font-size: medium; text-align: justify;">3. สาย 8 Pin หรือ PCI-E : เป็นสาย 8 Pin เช่นกัน แต่แยก 6+2 Pin ครับ ทำหน้าที่เพื่อจ่ายไฟเลี้ยงให้กับการ์ดจอ ซึ่งการ์ดจอรุ่นเริ่มต้นไม่ต้องใช้ไฟเลี้ยง แต่ถ้ามีสเปกสูงขึ้น มันก็จะใช้ไฟมากขึ้น 6 Pin หรือ 8 Pin ขึ้นไป ทำให้ต้องแยก 6+2 Pin ครับ</p></td>
+          </tr>
+          <tr>
+            <td><img src="images/computer-assembly-8-2-4.jpg" width="500" height="250" alt=""/></td>
+            <td><p style="text-indent: 2.5em; font-size: medium; text-align: justify;">4. สาย SATA Power : เป็นสายที่มีหน้าตาแตกต่างไปจาก 3 สายก่อนหน้านี้ โดยจะมีขนาดเล็กและแบนกวว่ามาก ตัวพอร์ตคล้ายตัว L  มีหน้าที่จ่ายไฟให้กับตัวจัดเก็บข้อมูลเป็นหลักครับ</p></td>
+          </tr>
+          <tr>
+            <td><img src="images/computer-assembly-8-2-5.jpg" width="500" height="250" alt=""/></td>
+            <td><p style="text-indent: 2.5em; font-size: medium; text-align: justify;">5. สาย Molex (4 Pin) : เป็นสายหัวแบนที่หนากว่าสาย SATA Power ภายในมี 4 Pin มีหน้าที่จ่ายไฟให้กับอุปกรณ์ทุกชิ้นที่เชื่อมต่อ อาทิเช่น พัดลมเคส, แสงไฟ RGB หรือชุดควบคุมฟีเจอร์ต่าง ๆ เป็นต้น</p></td>
+          </tr>
+          <tr>
+            <td><img src="images/computer-assembly-8-2-6.jpg" width="500" height="250" alt=""/></td>
+            <td><p style="text-indent: 2.5em; font-size: medium; text-align: justify;">6. สาย FDD : เป็นพอร์ตขนาดเล็กที่สุด ซึ่ง PSU ส่วนใหญ่ ใส่มาให้ 1 พอร์ตเสมอ ซึ่งในอดีตใช้จ่ายไฟให้กับฟลอปปี้ดิสก์ (Floppy A) แต่ยุคสมัยนี้คงไม่มีใครใช้เเล้ว เพราะมีแฟลชไดร์ฟมาทดแทน</p></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <center><img src="images/computer-assembly-step-8-2.jpg" width="847" height="442" alt=""/></center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">เมื่อรู้จักหน้าตาและหน้าที่ของพอร์ตทุก ๆ ตัวบน PSU กันไปแล้ว ต่อจากนี้ก็จะเป็นการเชื่อมต่อแต่ละพอร์ตเข้ากับซ็อกเก็ตของเมนบอร์ด และอุปกรณ์ต่าง ๆ ครับ ซึ่งเราจะเห็นได้ว่า หน้าตาของแต่ละพอร์ตจะไม่เหมือนกันเลย ฉะนั้นการเชื่อมต่อในส่วนนี้จึงไม่ได้ยุ่งยากอย่างที่คุณคิดเลยครับ เพียงแค่คุณทำการเลือกพอร์ตให้ตรงกัน มันก็สามารถเชื่อมต่อกันได้อย่างพอดี</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. เชื่อมต่อ <strong>สาย 24 Pin</strong> เข้ากับ <strong>ซ็อกเก็ต 24 Pin</strong> บนเมนบอร์ด โดยจะอยู่ทางด้านขวามือของเมนบอร์ด ซึ่งคุณสามารถสังเกตุได้ง่าย ๆ จาก ซ็อกเก็ตนี้จะมีขนาดใหญ่ที่สุดครับ</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. จากนั้นให้เชื่อมต่อ <strong>สาย 8 Pin (4+4 Pin)</strong> เข้ากับ <strong>ซ็อกเก็ต 4 Pin</strong> หรือ <strong>8 Pin</strong> (ขึ้นอยู่กับรุ่นของเมนบอร์ดที่ใช้) ซึ่งจะอยู่บริเวณด้านบนของเมนบอร์ด (ก่อนเสียบลงไปคุณต้องดูก่อนว่าเมนบอร์ดของคุณใช้กี่ Pin ? ถ้าหากใช้ 4 Pin ก็ให้แยกพอร์ตเป็น 4 Pin ก่อน แล้วค่อยเสียบลงไป แต่ถ้าใช้ 8 Pin ก็เสียบลงไปได้เลยครับ)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. ส่วนต่อมาให้เชื่อมต่อ <strong>สาย 8 Pin (6+2 Pin)</strong> เข้ากับ <strong>กราฟฟิกการ์ด (GPU)</strong> ซึ่งจะใช้ซ็อกเก็ตกี่ Pin ? มันก็จะขึ้นอยู่กับกราฟฟิกการ์ดรุ่นที่คุณใช้ครับ (หากเป็นกราฟิกการ์ดรุ่นเริ่มต้น ส่วนใหญ่ก็จะไม่ใช้ไฟเลี้ยงเพิ่ม เพราะไฟจากเมนบอร์ด ผ่านพอร์ต PCI-e ก็เพียงพอแล้ว แต่ถ้าเป็นรุ่นไฮเอนด์ที่มีพัดลม 2-3 ตัว ก็อาจต้องใช้ 8 Pin หรือ 12 Pin (8+8 Pin) ครับ</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">4. เชื่อมต่อ <strong>สาย SATA Power</strong> เข้ากับ <strong>ฮาร์ดไดรฟ์ </strong>ที่เป็น HDD หรือ SSD ครับ</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">5. สุดท้ายเชื่อมต่อ <strong>สาย Molex (4 Pin)</strong> เข้ากับ <strong>อุปกรณ์เสริมอื่น ๆ</strong> เช่น พัดลมเคส, ไฟ LED และอื่น ๆ ตามต้องการ</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;"><strong>หมายเหตุ :</strong> ในสเปกที่เราใช้เป็นตัวอย่างในวันนี้ ไม่มีทั้ง กราฟฟิกการ์ด, ฮาร์ดดิสก์ และไดรฟ์ DVD ถ้าหากว่าในสเปกของคุณมีอุปกรณ์เหล่านี้ คุณก็แค่นำสายไปเชื่อมต่อเข้ากับอุปกรณ์</p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;"><strong>คำแนะนำ :</strong> วิธีการเลือก Power supply (PSU) ที่เหมาะกับสเปกของคุณ สามารถทำได้ง่าย ๆ ครับ เพียงค้นหาคำว่า <strong>&ldquo;Power Supply Calculator&rdquo;</strong> คุณจะพบกับ เว็บฯ คำนวณค่าวัตต์ ที่จะให้คุณเลือกอุปกรณ์ต่าง ๆ ที่ใช้ในสเปกของคุณ จากนั้นเว็ปฯ จะคำนวณค่าวัตต์ออกมาให้ ซึ่งที่เหลือคุณแค่นำค่าวัตต์ที่ได้ไปใช้ในการเลือก PSU ครับ โดยคุณจำเป็นต้องเลือก PSU ที่มีกำลังวัตต์มากกว่าที่สเปกของคุณต้องการ เพื่อรองรับการอัพเกรดในอนาคตครับ</p>
+      <hr><h3><strong>ขั้นตอนที่ 9 : การเชื่อมต่อสายจากพอร์ตต่าง ๆ หน้าเคส (Front Panel)</strong></h3>
+      <center>
+        <img src="images/computer-assembly-step-9.jpg" width="847" height="442" alt=""/>
+      </center>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">ในขั้นตอนนี้ อาจจะมีความยุ่งยากสักเล็กน้อยครับ เนื่องจากพอร์ตส่วนใหญ่มันมีหน้าตาที่เหมือน ๆ กัน แถมยังมีบางพอร์ตอยู่ติดกันอีก และอีกอย่างเมนบอร์ดแต่ละรุ่น ตำแหน่ง และการเขียนกำกับก็ไม่ตรงกัน ฉะนั้นเพื่อความถูกต้อง เราขอแนะนำให้คุณเปิดคู่มือของเมนบอร์ดควบคู่ไปด้วยครับ</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. เริ่มต้นด้วยการเชื่อมต่อปุ่มและไฟต่าง ๆ หน้าเคสทั้ง ปุ่มเปิด-ปิด (Power), ปุ่มรีเซ็ต (Reset), ไฟสถานะ Power LED, ไฟสถานะ HDD LED เข้ากับช่อง System Panel header บนเมนบอร์ด (โดยส่วนใหญ่จะอยู่มุมขวาล่างของเมนบอร์ด)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. จากนั้นเชื่อมต่อสาย USB ที่อยู่หน้าเคส ไม่ว่าจะเป็น USB2.0, USB3.0 รวมถึง USB Type-C เข้ากับพอร์ต USB2.0, USB3.0 และ USB Type-C บนเมนบอร์ด (ถ้าเคสที่คุณใช้มี แต่หากไม่มี USB3.0 และ USB Type-C สาย USB นั้น ๆ ก็จะไม่มีมาให้ครับ) ซึ่งโดยทั่วไป พอร์ต USB ต่าง ๆ จะอยู่บริเวณขอบของเมนบอร์ด ทั้ง ด้านล่าง และด้านขวา)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. ปิดท้ายด้วยการ เชื่อมต่อสาย HD Audio ซึ่งเป็นแจ็คไมค์ (Mic) และหูฟัง (Headphone) หน้าเคส เข้ากับช่อง Front Panel Audio header ของเมนบอร์ด</p>
+      <hr>
+      <h3><strong>ขั้นตอนที่ 10 : การติดตั้งระบบปฏิบัติการ</strong></h3>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">สำหรับขั้นตอนการติดตั้งระบบปฏิบัติการไม่ได้มีอะไรที่ยุ่งยากซับซ้อนเลยครับ เพียงแค่คุณทำตามขั้นตอนไปเรื่อย ๆ ก็เป็นอันเรียบร้อย โดยวิธีการก็ง่าย ๆ ดังต่อไปนี้</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">1. ขั้นแรกให้เตรียมคอมพิวเตอร์อีกเครื่องนึง และแฟลชไดรฟ์ ขนาด 8GB ขึ้นไป (ทำการสำรองข้อมูลให้เรียบร้อย เพราะจะต้องมีการลบข้อมูลหรือฟอร์แมตแฟลชไดรฟ์)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">2. เปิดเบราว์เซอร์ขึ้นมา พิมพ์ค้นหาคำว่า &ldquo;Windows 10&rdquo; เลือกหัวข้อ &ldquo;ดาวน์โหลดดิสก์อิมเมจ ของ Windows 10 (ไฟล์ ISO) – Microsoft&rdquo; บนเว็บไซต์ https://www.microsoft.com</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">3. เมื่อเข้ามาที่เว็ปไซต์ของ Microsoft แล้ว ให้คุณคลิกคำว่า &ldquo;ดาวน์โหลดเครื่องมือทันที&rdquo; หลังจากดาวน์โหลดคุณจะได้โปรแกรม Media Creation Tool 21H2.exe มา (ด้านล่างมีคำแนะนำอย่างละเอียด ในการใช้เครื่องมือเพื่อสร้างสื่อข้อมูลสำหรับการติดตั้ง Windows 10 ลงบนพีซีเครื่องอื่น ซึ่งคุณสามารถเข้าไปอ่านเพิ่มเติมได้ครับ)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">4. จากนั้นเปิดโปรแกรม Media Creation Tool21H2.exe ขึ้นมาเพื่อทำการสร้าง Image file บน USB Flash Drive ซึ่งให้คุณทำตามขั้นตอนไปเรื่อย ๆ โดยตัวโปรแกรมจะเริ่มต้นด้วยการฟอร์แมต หรือลบข้อมูลในไดรฟ์ออกทั้งหมดก่อน</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">5. เมื่อได้ Image file Windows 10 บน USB Flash Drive มาแล้ว คุณสามารถนำแฟลชไดรฟ์ดังกล่าวไปติดตั้งวินโดวส์บนคอมฯ เครื่องใดก็ได้ครับ โดยนำไปเสียบเข้ากับพอร์ต USB ของเครื่องที่ต้องการลงวินโดวส์ (ขอแนะนำให้เลือกพอร์ต USB บนเคสคอมฯ ที่เป็น USB-3 ได้ทั้ง สีแดง และสีน้ำเงิน ครับ)</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">6. หลังจากที่เสียบแฟลชไดรฟ์คาไว้แล้วให้ทำการเปิดคอมพิวเตอร์ขึ้นมา เข้าไปตั้งค่าใน BIOS (โดยให้กดปุ่มใดปุ่มหนึ่งย้ำ ๆ ซึ่งส่วนใหญจะใช้ F2, F10 หรือ F12 เป็นต้น หากไม่ได้ให้ค้นหาผ่านอินเทอร์เน็ต) จากนั้นไปที่แถบ Boot &gt; Boot Option เมื่อเข้าไปแล้ว ให้ย้ายแฟลชไดรฟ์ที่เป็นเครื่องมือขึ้นไปบนสุด เพื่อให้เครื่องบูตแฟลชไดรฟ์ก่อนฮาร์ดดิสก์</p>
+      <p style="text-indent: 5em; font-size: medium; text-align: justify;">7. จากนั้นให้คุณเลื่อนไปที่แถบ Save and Exit ตัวเครื่องจะรีสตาร์ทใหม่ และครั้งนี้เครื่องจะบูทผ่านแฟลชไดรฟ์เข้าไปที่ตัวติดตั้ง Windows 10 ก่อน เมื่อมาถึงขั้นตอนนี้ ให้คุณทำตามขั้นตอนไปเรื่อย ๆ เป็นอันเสร็จสิ้นครับ</p>
+      <hr>
+      <p><strong>บทสรุป</strong></p>
+      <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">สำหรับ <strong>10 ขั้นตอน หลัก ๆ ในการประกอบคอมพิวเตอร์ แบบง่าย ๆ</strong> ซึ่งต่อให้คุณไม่มีประสบการณ์เกี่ยวกับการประกอบคอมพิวเตอร์มาก่อนเลย คุณสามารถทำตามขั้นตอนได้ง่าย ๆ ครับ แต่ฮาร์ดแวร์บางรุ่น อาจจะมีรายละเอียดที่มากกว่านี้ ดังนั้นทางที่ดี เราขอแนะนำให้คุณอ่านคู่มือควบคู่ไปด้วย เพราะในคู่มือจะมีคำแนะนำที่ถูกต้องไว้ให้อยู่แล้วครับ แต่หลักการติดตั้งก็จะเหมือนกันทั้งหมด</p>
+    <p style="text-indent: 2.5em; font-size: medium; text-align: justify;">การประกอบคอมพิวเตอร์ ไม่ได้สำคัญกับคนที่กำลังจะซื้อคอมฯ เท่านั้น แต่มันสำคัญสำหรับทุกคนที่ใช้คอมฯ ครับ ไม่ว่าจะเป็น Notebook Laptop Desktop PC ซึ่งทุกคนทราบกันดีว่า เมื่อใช้งานไปสักระยะหนึ่ง คอมพิวเตอร์จะมีฝุ่นอยู่ภายในเต็มไปหมด เพราะมันเข้ามาทางพัดลมเคส ซึ่งหากคุณไม่มีการทำความสะอาดเลย แน่นอนครับว่า ประสิทธิภาพการระบายอากาศจะแย่ลงเรื่อย ๆ จนท้ายที่สุดมันส่งผลถึงอุปกรณ์ต่าง ๆ จนเสียหายได้ ดังนั้นหากคุณสาารถ ประกอบคอมฯ ได้ นั่นก็หมายความว่า คุณก็สามารถทำความสะอาดคอมฯ ของตัวเองได้ครับ ไม่ต้องเสียเวลา และเสียเงิน พาไปที่ร้าน    </p>
+    <p style="font-size: medium; text-align: justify;">ขอบคุณอีกรั้งสำหรับรูปภาพและข้อมูลจาก <a href="https://bestreview.asia/how-to/computer-assembly/">bestreview.asia</a></p>
+	</td>
+  </tr>
+  <tr>
+    <td width="255" height="55"><a href="p1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/m2s.png',1)"><img src="images/m2.png" alt="" width="255" height="55" id="Image4"></a></td>
+  </tr>
+  <tr>
+    <td width="255" height="55"><a href="p2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/m3s.png',1)"><img src="images/m3.png" alt="" width="255" height="55" id="Image5"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/m3s.png',1)"></a></td>
+  </tr>
+  <tr>
+    <td width="255" height="55"><a href="p3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/m4s.png',1)"><img src="images/m4.png" alt="" width="255" height="55" id="Image6"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/m4s.png',1)"></a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="#333333">จัดทำโดย นายภาคย์ เชื้อบ่อคา รหัสนิสิต 631031485 สาขาวิชาเทคโนโลยีและสื่อสารการศึกษา  คณะศึกษาศาสตร์ มหาวิทยาลัยทักษิณ วิทยาเขตสงขลา</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
